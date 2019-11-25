@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Model / Margin & Padding</title>
+    <style>
+      /* CSS Reset. * to select everything */
+      * {
+        margin: 0;
+        padding: 0;
+
+        /* Padding pixels gets added to the width without this property */
+        box-sizing: border-box;
+      }
+
+      /* Margin is for outside the element while padding is inside the element */
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid;
+        width: 500px;
+        /* Padding on all sides */
+        padding: 20px;
+
+        /* Margin on all sides */
+        /* margin: 20px; */
+
+        /* Note: Codes that are below overwrites ones above */
+        /* margin-top: 10px; */
+
+        /* Padding shorthand: top right bot left */
+        margin: 10px 20px 10px 20px;
+
+        /* Above is same as.. i.e. up/bot, left/right */
+        /* margin: 10px 20px; */
+      }
+
+      .box h3 {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
+        impedit! Rem excepturi reiciendis officia? Neque dignissimos veniam
+        ipsam, blanditiis quia ipsa non ab ea deserunt maxime sint eos facere
+        nostrum.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
+        impedit! Rem excepturi reiciendis officia? Neque dignissimos veniam
+        ipsam, blanditiis quia ipsa non ab ea deserunt maxime sint eos facere
+        nostrum.
+      </p>
+    </div>
+  </body>
+</html>

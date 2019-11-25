@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>List & Tables</title>
+  </head>
+  <body>
+    <!-- Unordered lists, more common -->
+    <!-- Not recommended to use style tag, but here's an example -->
+    <ul style="list-style: square">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!-- Different types are available for ol -->
+    <ol type="i">
+      <!-- With emmet, use li*[numLists] -->
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <!-- Nested lists -->
+    <ul>
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <ul>
+          <li>Nested Item 1</li>
+          <li>Nested Item 2</li>
+        </ul>
+      </li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!-- Tables to tabulate data, used to be common in early 2000 -->
+    <table style="width: 500px">
+      <thead>
+        <!-- table row -->
+        <tr>
+          <!-- table head -->
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!-- Table data -->
+          <td>Ellis</td>
+          <td>Min</td>
+          <td>mdb@kakao.com</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>doej222@aaa.com</td>
+        </tr>
+        <tr>
+          <td>Sam</td>
+          <td>Kim</td>
+          <td>kimkim22@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

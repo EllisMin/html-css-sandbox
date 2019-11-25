@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <!-- Action is where the form is submitted to -->
+    <form action="process.php">
+      <!-- Text input -->
+      <div>
+        <!-- for is to match id of the input -->
+        <!-- When they match, clicking label highlights the input -->
+        <label for="username">Name</label><br />
+        <!-- Use type for the client-side validation -->
+        <!-- name is used in server side -->
+        <input type="text" id="username" name="name" value="default name" />
+      </div>
+
+      <!-- Email input -->
+      <div>
+        <label for="email">Email</label><br />
+        <!-- emmet: input:email -->
+        <input type="email" name="email" id="email" placeholder="type email" />
+      </div>
+
+      <!-- Textbox(message input) -->
+      <div>
+        <label for="message">Message</label><br />
+        <!-- textbox with 50 letters in 5 rows -->
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+      </div>
+
+      <!-- Select tags -->
+      <div>
+        <label for="sex">Sex</label><br />
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Number inputs -->
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <!-- Date input -->
+      <div>
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <!-- Radio selector -->
+      <div>
+        <label for="membership">Membership</label>
+        <input type="radio" name="membership" id="membership" value="simple" />
+        Simple
+        <!-- Use checked for default -->
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+          checked
+        />
+        Standard
+        <input type="radio" name="membership" id="membership" value="super" />
+        Super
+      </div>
+
+      <!-- Checked box; can select multiple options -->
+      <div>
+        <label for="membership">I Like..</label>
+        <!-- Command + D to select next word, can change them at once -->
+        <input type="checkbox" name="likes" id="likes" value="bike" />
+        Bike
+        <!-- Use checked for default -->
+        <input type="checkbox" name="likes" id="likes" value="Car" />
+        Car
+        <input type="checkbox" name="likes" id="likes" value="plane" />
+        Plane
+      </div>
+
+      <!-- Submit -->
+      <input type="submit" value="Submit" />
+      <!-- Using button -->
+      <!-- <button type="submit">Submit</button> -->
+
+      <!-- Reset form -->
+      <button type="reset">Reset</button>
+
+    </form>
+  </body>
+</html>

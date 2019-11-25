@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rem Units</title>
+    <style>
+      /* Note: rem is recommended; also in font size setting of a browser doesn't affect em's but rems */
+      /* rem's more adaptive and responsive */
+      html {
+        /* Default is 16px; this is common thing to set as 10px for easier calculation */
+        /* Or do font-size: 62.5%; * 16 = 10px */
+        font-size: 10px;
+      }
+      #box-1 h3 {
+        /* 10px * 2 = 20px */
+        font-size: 2rem;
+      }
+      #box-1 p {
+        /* 10px * 1.6 = 16px */
+        font-size: 1.6rem;
+        /* 10px * 1.7 = 17px; Less confusing compared to em's */
+        /* em's would've been 10 * 1.6 * 1.7 */
+        line-height: 1.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        delectus eaque, itaque ducimus voluptatum labore harum, quia velit
+        perspiciatis numquam, possimus excepturi sint quos beatae officiis
+        reprehenderit debitis illo repudiandae!
+      </p>
+    </div>
+  </body>
+</html>

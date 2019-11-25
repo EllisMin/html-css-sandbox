@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Shadows</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-direction: column; */
+      }
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+
+        /* Box shadow */
+        /* offset-x | offset-y | color */
+        /* box-shadow: 10px 10px teal; */
+
+        /* offset-x | offset-y | blur-radius | color */
+        /* box-shadow: 5px 5px 20px teal; */
+
+        /* Negative values */
+        /* box-shadow: -10px 10px 20px teal; */
+
+        /* offset-x | offset-y | color | blur-radius | spread-radius | color */
+        /* box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.3); */
+        /* ^ something subtle */
+
+        /* inset | offset-x | offset-y | color */
+        /* box-shadow: inset -3px -3px teal; */
+
+        /* Multiple shadows */
+        box-shadow: 10px 10px 20px teal, -10px -10px 20px #000;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header>Heading</header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+          laboriosam dolorum, voluptate consequatur odio corrupti eaque velit
+          adipisci minus quod.
+        </p>
+      </div>
+      <div class="box">
+        <header>Heading</header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+          laboriosam dolorum, voluptate consequatur odio corrupti eaque velit
+          adipisci minus quod.
+        </p>
+      </div>
+      <div class="box">
+        <header>Heading</header>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+          laboriosam dolorum, voluptate consequatur odio corrupti eaque velit
+          adipisci minus quod.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google font import with HTML-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
+    <title>Fonts</title>
+    <style>
+      @import url("@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');");
+      body {
+        /* If first one isn't available, use second, third, etc */
+        font-family: "Roboto", sans-serif;
+        font-size: 18px; /* default html font size is 16px */
+        line-height: 1.6em;
+      }
+
+      /* Targeting, p isn't required */
+      #welcome p span {
+        font-weight: bold;
+      }
+
+      #about p span {
+          font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2>Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vel
+        officiis, voluptates voluptas libero
+        <span
+          >consequatur adipisci porro nisi accusamus expedita placeat et
+          consectetur nihil</span
+        >
+        beatae dolores repellendus magnam, ipsum excepturi?
+      </p>
+    </div>
+
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit
+        <span
+          >amet consectetur adipisicing elit. Sapiente dolorum libero labore
+          ut</span
+        >
+        laboriosam illo!
+      </p>
+    </div>
+  </body>
+</html>

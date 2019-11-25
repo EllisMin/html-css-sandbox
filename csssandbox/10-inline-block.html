@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline & Block Styling</title>
+    <style>
+      * {
+        /* box-sizing: border-box; */
+      }
+      /* Changing li(block element) to in-line element */
+      li {
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+
+      /* Changing img(inline element) to block element */
+      img {
+        /* You can't margin: auto on in-line element */
+        display: block;
+        margin: auto;
+      }
+      /* Aligning 3 divs in column */
+      .box {
+        width: 32.8%;
+        /* Use inline-block to add width */
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br /><br />
+    <img src="/img/computer.png" alt="Img1" width="200" />
+    <img src="/img/computer.png" alt="Img1" width="200" />
+    <br /><br />
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+        obcaecati deserunt officiis, animi eveniet consequuntur molestias!
+        Quidem modi aliquam delectus.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+        obcaecati deserunt officiis, animi eveniet consequuntur molestias!
+        Quidem modi aliquam delectus.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+        obcaecati deserunt officiis, animi eveniet consequuntur molestias!
+        Quidem modi aliquam delectus.
+      </p>
+    </div>
+  </body>
+</html>

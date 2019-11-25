@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>vh and vw units</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* Default height for body */
+        /* height: 100%; */
+      }
+      header {
+        background: #333 url("https://source.unsplash.com/daily") no-repeat
+          center center/cover;
+        color: #fff;
+        /* Following the body height, 100 / 30 = 30% */
+        height: 100vh;
+
+        /* vw's aren't as common as vhs */
+        /* width: 50vw; */
+
+        text-align: center;
+        padding: 2rem;
+        padding-top: 8rem;
+      }
+      header h1 {
+        font-size: 3rem;
+      }
+      header p {
+        margin: 2rem 0;
+      }
+      .btn {
+        display: inline;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+      section {
+        padding: 2rem;
+      }
+      /* Landscape */
+      @media (max-height: 450px) {
+        header {
+          padding-top: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Each vh is a slice across; there will be 100 of them -->
+    <!-- Each vw is a slice that goes down -->
+    <header>
+      <h1>Welcome to Our Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illum a
+        quo earum, sed odit ex, quae deleniti voluptates nesciunt rem quod
+        veritatis molestias eligendi ea repellendus, sit molestiae itaque?
+      </p>
+      <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+      <h3>About Our Company</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ipsam
+        pariatur illum id et consectetur corporis, quam quidem aut explicabo
+        aliquam nihil, repudiandae sed dicta omnis debitis placeat hic cum optio
+        ipsum error! Architecto sint dignissimos neque, temporibus voluptates
+        natus velit quia consequuntur optio? Eius, fugiat! Distinctio beatae
+        nobis facilis!
+      </p>
+    </section>
+  </body>
+</html>

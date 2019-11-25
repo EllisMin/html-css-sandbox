@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keyframes 2</title>
+    <style>
+      :root {
+        --to-pixel: 200px;
+      }
+      body {
+        background: #333;
+      }
+      .box {
+        background: #fff;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        animation: animate1 2s infinite forwards ease-in-out;
+      }
+
+      @keyframes animate1 {
+        25% {
+          color: #fff;
+          top: 0;
+          left: var(--to-pixel);
+          background: orange;
+          border-radius: 50% 0 0 0;
+        }
+        50% {
+          left: var(--to-pixel);
+          top: var(--to-pixel);
+          background: yellow;
+          border-radius: 50% 50% 0 0;
+        }
+        75% {
+          left: 0;
+          top: var(--to-pixel);
+          background: green;
+          border-radius: 50% 50% 50% 0;
+        }
+        100% {
+          top: 0;
+        }
+
+        to {
+          top: 0;
+          border-radius: 50% 50% 50% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

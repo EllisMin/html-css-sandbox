@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+      .box {
+        background: black;
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+        /* Animating */
+        /* animation-name: animate1;
+        animation-duration: 0.3s; */
+
+        /* animation-iteration-count: infinite; */
+        /* animation-iteration-count: 5; */
+
+        /* Keep it at 'to' property; backwards is default that gets back to from */
+        /* animation-fill-mode: forwards; */
+
+        /* Delay before animation starts */
+        /* animation-delay: 1s; */
+
+        /* alternate between from and to; option: alternate-reverse */
+        /* animation-direction: alternate; */
+
+        /*
+            Animate options:
+            ease-in: gets faster near the end
+            east-out: starts out fast and gets slower
+            ease-in-out: start out slow and also end slow
+         */
+        /* animation-timing-function: ease-in-out; */
+
+        /* name | duration | iteration-count | fill-mode | delay | direction | timing function */
+        animation: animate1 500ms infinite forwards 1s alternate-reverse ease-in;
+      }
+      @keyframes animate1 {
+        /* Specify points in animation */
+        from {
+          width: 200px;
+          height: 200px;
+          top: 0;
+          left: 0;
+        }
+        to {
+          width: 50%;
+          height: 50vh;
+          background: salmon;
+          /* top: 50%; */
+          /* left: 50%; */
+          top: 250px;
+          left: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
