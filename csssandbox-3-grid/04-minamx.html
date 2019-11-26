@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Minmax</title>
+    <style>
+      .grid {
+        display: grid;
+
+        /* May be efficient for image galleries, but not for others */
+
+        /* Responsive; stacks around < 400px and spans out for 400px, 600px, ...  */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      .item {
+        padding: 3rem;
+        background: #f4f4f4;
+        text-align: center;
+        border: 1px #ccc solid;
+
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <!-- <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+      <div class="item">Item 9</div>
+      <div class="item">Item 10</div>
+      <div class="item">Item 11</div>
+      <div class="item">Item 12</div>
+      <div class="item">Item 13</div>
+      <div class="item">Item 14</div>
+      <div class="item">Item 15</div> -->
+    </div>
+  </body>
+</html>
